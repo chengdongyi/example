@@ -124,11 +124,17 @@ public class DateUtils {
     }
 
     // ========================= 字符串根据指定的格式转成时间 =========================
+    /**
+     * 字符串 转 Date
+     */
     public static Date parse(String time, String pattern) {
         LocalDateTime localDateTime = LocalDateTime.parse(time, DateTimeFormatter.ofPattern(pattern));
         return asDate(localDateTime);
     }
 
+    /**
+     * 字符串 转 LocalDateTime
+     */
     public static LocalDateTime parseDateTime(String time, String pattern) {
         return LocalDateTime.parse(time, DateTimeFormatter.ofPattern(pattern));
     }
@@ -171,7 +177,7 @@ public class DateUtils {
 
 
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
 //        LocalDateTime now = LocalDateTime.now();
 //        LocalDate now1 = LocalDate.now();
