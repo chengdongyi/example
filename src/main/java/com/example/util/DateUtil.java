@@ -13,7 +13,7 @@ import java.util.Date;
  * @author chengdongyi
  * @date 2019/11/27 10:56
  */
-public class DateUtils {
+public class DateUtil {
 
     /**
      * 获取当前年月日
@@ -172,28 +172,23 @@ public class DateUtils {
 
 
 
-
-
-
-
-
     public static void main(String[] args) {
 
-//        LocalDateTime now = LocalDateTime.now();
-//        LocalDate now1 = LocalDate.now();
-//
-//        System.out.println("-------------  时间转字符串 -------------");
-//        System.out.println(format("yyyy-MM-dd HH:mm:ss"));
-//        System.out.println(format(new Date(), "yyyy-MM-dd HH:mm:ss"));
-//        System.out.println(format(now, "yyyy-MM-dd HH:mm:ss"));
-//        System.out.println("-------------  字符串转时间 -------------");
-//        System.out.println(parse("20191212000000", "yyyyMMddHHmmss"));
-//        System.out.println(parseDateTime("20191212000000", "yyyyMMddHHmmss"));
-//        System.out.println("-------------  LocalDateTime 和 Date 互转 -------------");
-//        System.out.println(asDate(now));
-//        System.out.println(asDate(now1));
-//        System.out.println(asLocalDate(new Date()));
-//        System.out.println(asLocalDateTime(new Date()));
+        LocalDateTime now = LocalDateTime.now();
+        LocalDate now1 = LocalDate.now();
+
+        System.out.println("-------------  时间转字符串 -------------");
+        System.out.println(format("yyyy-MM-dd HH:mm:ss"));
+        System.out.println(format(new Date(), "yyyy-MM-dd HH:mm:ss"));
+        System.out.println(format(now, "yyyy-MM-dd HH:mm:ss"));
+        System.out.println("-------------  字符串转时间 -------------");
+        System.out.println(parse("20191212000000", "yyyyMMddHHmmss"));
+        System.out.println(parseDateTime("20191212000000", "yyyyMMddHHmmss"));
+        System.out.println("-------------  LocalDateTime 和 Date 互转 -------------");
+        System.out.println(asDate(now));
+        System.out.println(asDate(now1));
+        System.out.println(asLocalDate(new Date()));
+        System.out.println(asLocalDateTime(new Date()));
 
         System.out.println("当前年月日：" + getCurrentDay());
         System.out.println("当前年月：" + getCurrentMonth());
@@ -203,22 +198,22 @@ public class DateUtils {
         System.out.println("月末：" + format(lastDayOfMonth(), "yyyy-MM-dd HH:mm:ss:SSS"));
         System.out.println("月末：" + format(lastDayOfMonth(new Date()), "yyyy-MM-dd HH:mm:ss:SSS"));
 
-//        LocalDateTime today = LocalDateTime.now();
-//
-//        //获取当前年，并判断是否是闰年
-//        System.out.println(today.getYear() + " 年, 是闰年? " + today.toLocalDate().isLeapYear());
-//
-//        //比较两个日期的先后
-//        System.out.println("Today is before 01/01/2015? " + today.isBefore(LocalDateTime.of(2015,1, 1, 11, 30)));
-//
-//        //时间加减
-//        System.out.println("1年后 " + today.plusYears(1));
-//        System.out.println("2个月后 " + today.plusMonths(2));
-//        System.out.println("3周前 " + today.minusWeeks(3));
-//        System.out.println("10天前 " + today.minusDays(10));
-//        System.out.println("2小时后 " + today.plusHours(2));
-//        System.out.println("10分钟后 " + today.plusMinutes(10));
-//        System.out.println("3秒后 " + today.plusSeconds(10));
+        LocalDateTime today = LocalDateTime.now();
+
+        //获取当前年，并判断是否是闰年
+        System.out.println(today.getYear() + " 年, 是闰年? " + today.toLocalDate().isLeapYear());
+
+        //比较两个日期的先后
+        System.out.println("Today is before 01/01/2015? " + today.isBefore(LocalDateTime.of(2015,1, 1, 11, 30)));
+
+        //时间加减
+        System.out.println("1年后 " + today.plusYears(1));
+        System.out.println("2个月后 " + today.plusMonths(2));
+        System.out.println("3周前 " + today.minusWeeks(3));
+        System.out.println("10天前 " + today.minusDays(10));
+        System.out.println("2小时后 " + today.plusHours(2));
+        System.out.println("10分钟后 " + today.plusMinutes(10));
+        System.out.println("3秒后 " + today.plusSeconds(10));
 
     }
 
