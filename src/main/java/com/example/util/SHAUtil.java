@@ -66,6 +66,8 @@ public class SHAUtil {
 
     public static void main(String[] args) throws Exception {
 
+        // sha 在线加密： http://encode.chahuo.com
+        // hmac在线加密：https://1024tools.com/hmac
         System.out.println(SHAUtil.hmacMd5("123456", "123456"));
         System.out.println(SHAUtil.hmacSha1("123456", "123456"));
         System.out.println(SHAUtil.hmacSha256("123456", "123456"));
