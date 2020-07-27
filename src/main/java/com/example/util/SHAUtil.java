@@ -63,7 +63,6 @@ public class SHAUtil {
         return result;
     }
 
-
     public static void main(String[] args) throws Exception {
 
         // sha 在线加密： http://encode.chahuo.com
@@ -73,6 +72,5 @@ public class SHAUtil {
         System.out.println(SHAUtil.hmacSha256("123456", "123456"));
         System.out.println(SHAUtil.hmacSha512("123456", "123456"));
     }
-
 
 }
