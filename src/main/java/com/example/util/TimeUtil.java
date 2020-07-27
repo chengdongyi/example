@@ -13,7 +13,7 @@ import java.util.Date;
  * @author chengdongyi
  * @date 2019/11/27 10:56
  */
-public class DateUtil {
+public class TimeUtil {
 
     /**
      * 获取当前年月日
